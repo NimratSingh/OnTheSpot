@@ -1,0 +1,57 @@
+<! DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>OnTheSpot Study Map</title>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div class="not-foot">
+      <h1>OnTheSpot</h1>
+      <h2>Campus Map</h2>
+      <div id="filter-form" class="flex">
+        <form id="filter_form">
+          <fieldset>
+            <legend><b>Filters</b></legend>
+            <label name="check_label"><input type="checkbox" name="quiet" value="0">Quiet</label>
+            <label name="check_label"><input type="checkbox" name="loud" value="1">Collaborative</label>
+            <label name="check_label"><input type="checkbox" name="printer" value="2">Access to printers</label>
+            <label name="check_label"><input type="checkbox" name="computer" value="3">Access to computers</label>
+            <label name="check_label"><input type="checkbox" name="food" value="4">Food friendly</label>
+            <label name="check_label"><input type="checkbox" name="sun" value="5">Natural light</label>
+            <label name="check_label"><input type="checkbox" name="room" value="6">Study rooms</label>
+            <br></br>
+            <button type="button" id="search_button">Search</button>
+            <span id="no_results"></span>
+          </fieldset>
+        </form>
+      </div>
+
+      <div id="map" class="flex">
+        <script src="./testing.js"></script>
+      </div>
+    </div>
+
+
+    <div class="foot">
+      <form id="feedback_form" >
+        <p>Contribute to the campus map by sharing your favourite study spots!</p>
+        <textarea id="suggestions" name="suggestions" rows="3" cols="70"></textarea>
+
+        <p>Any additional feedback on the website would also be greatly appreciated :)</p>
+        <textarea id="feedback" name="feedback" rows="3" cols="70"></textarea>
+
+        <button class="newline" type="submit">Submit</button>
+      </form>
+      <p id="credits_lol"><i>Created by Luna Kang, Clara Goussanou, Nimrat Singh, Fiona Zhen - January 2025<i><p>
+    
+    </div>
+  </body>
+</html>
